@@ -11,3 +11,11 @@ fun CompanyListingEntity.toCompanyListing(): CompanyListing {
         exchange = exchange
     )
 }
+
+fun CompanyListing.toCompanyListingEntity(): CompanyListingEntity {
+    return CompanyListingEntity(
+        name = name,
+        symbol = symbol,
+        exchange = exchange
+    )
+}
